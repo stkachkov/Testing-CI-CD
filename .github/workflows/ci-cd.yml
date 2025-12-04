@@ -27,6 +27,9 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main' && github.actor == 'stkachkov'
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
