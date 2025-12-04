@@ -1,0 +1,13 @@
+# Gradle
+.gradle/
+build/
+
+# IDE files
+.idea/
+*.iml
+*.iws
+out/
+
+# Local files
+.DS_Store
+*.log
